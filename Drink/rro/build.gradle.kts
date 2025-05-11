@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.vendor.rro"
+    namespace = "com.vendor.drink.rro"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.vendor.rro"
+        applicationId = "com.vendor.drink.rro"
         minSdk = 21
         targetSdk = 35
         versionCode = 1
@@ -32,6 +32,22 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+
+    flavorDimensions += "brand"
+    productFlavors {
+        create("CocaCola") {
+            dimension = "brand"
+            applicationIdSuffix = ".coca.cola"
+        }
+        create("Sprite") {
+            dimension = "brand"
+            applicationIdSuffix = ".sprite"
+        }
+        create("Fanta") {
+            dimension = "brand"
+            applicationIdSuffix = ".fanta"
+        }
     }
 }
 
