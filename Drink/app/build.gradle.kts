@@ -33,6 +33,26 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    flavorDimensions += "brand"
+    productFlavors {
+        create("Default") {
+            dimension = "brand"
+            applicationIdSuffix = ".default"
+        }
+        create("CocaCola") {
+            dimension = "brand"
+            applicationIdSuffix = ".coca.cola"
+        }
+        create("Sprite") {
+            dimension = "brand"
+            applicationIdSuffix = ".sprite"
+        }
+        create("Fanta") {
+            dimension = "brand"
+            applicationIdSuffix = ".fanta"
+        }
+    }
 }
 
 dependencies {
