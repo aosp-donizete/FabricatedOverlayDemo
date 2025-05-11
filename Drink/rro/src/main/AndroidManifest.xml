@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:hasCode="false" />
+    <overlay
+        android:resourcesMap="@xml/overlays"
+        android:targetName="ThemeResources"
+        android:targetPackage="com.vendor.drink.default" />
+</manifest>

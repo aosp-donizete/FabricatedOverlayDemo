@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<overlayable name="ThemeResources">
+    <policy type="public">
+        <item type="string" name="app_name" />
+        <item type="string" name="welcome" />
+    </policy>
+</overlayable>
