@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.vendor.drink.rro"
-        minSdk = 21
+        minSdk = 30
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
