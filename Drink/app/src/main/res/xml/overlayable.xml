@@ -2,6 +2,6 @@
 <overlayable name="ThemeResources">
     <policy type="public">
         <item type="string" name="app_name" />
-        <item type="string" name="welcome" />
+        <item type="string" name="hello_world" />
     </policy>
 </overlayable>
