@@ -6,5 +6,6 @@ android_app {
     system_ext_specific: true,
     static_libs: [
         "androidx.appcompat_appcompat",
+        "androidx-constraintlayout_constraintlayout",
     ]
 }
