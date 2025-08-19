@@ -18,21 +18,20 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button)?.setOnClickListener {
             val packageService = getSystemService<OverlayManager>()!!
 
-            val fabricatedOverlay = FabricatedOverlay.Builder(
-                packageName,
-                "ThemeResources",
+            val fabricatedOverlay = FabricatedOverlay(
+                "abcd",
                 "com.vendor.drink.default"
-            )
-                .setTargetOverlayable("ThemeResources")
-                .build()
-                .apply {
-                    setResourceValue(
-                        "string/hello_world",
-                        TypedValue.TYPE_STRING,
-                        "Hello World from FRRO",
-                        null
-                    )
-                }
+            ).apply {
+                setOwningPackage(packageName)
+
+                targetOverlayable = "ThemeResources"
+                setResourceValue(
+                    "string/hello_world",
+                    TypedValue.TYPE_STRING,
+                    "Hello World from FRRO",
+                    null
+                )
+            }
 
             val transaction = OverlayManagerTransaction
                 .Builder()
